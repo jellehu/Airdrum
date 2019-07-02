@@ -1,0 +1,65 @@
+\hypertarget{classmpu6050}{}\section{mpu6050 Class Reference}
+\label{classmpu6050}\index{mpu6050@{mpu6050}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmpu6050_abe54df5d2a971f90ee41e243dd21d611}\label{classmpu6050_abe54df5d2a971f90ee41e243dd21d611}} 
+{\bfseries mpu6050} (hwlib\+::i2c\+\_\+bus \&bus)
+\item 
+void \hyperlink{classmpu6050_abf7874fc328913b17c22c86f3a01ee6e}{wake\+Up} ()
+\begin{DoxyCompactList}\small\item\em Wake up the M\+P\+U6050 gyroscope. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmpu6050_af1dcb00f30964e8ea1f20b1f4105b46a}{get\+GyroscopeZ} ()
+\begin{DoxyCompactList}\small\item\em Get the gyroscope Z value. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmpu6050_a2f8aade3ba8a2b178c79a67edc314db4}{get\+AcceleratorX} ()
+\begin{DoxyCompactList}\small\item\em Get the accelerator X value. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmpu6050_ae4dce81dd2af2fc9288b2f3966f59333}{get\+AcceleratorY} ()
+\begin{DoxyCompactList}\small\item\em Get the accelerator X value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmpu6050_a2f8aade3ba8a2b178c79a67edc314db4}\label{classmpu6050_a2f8aade3ba8a2b178c79a67edc314db4}} 
+\index{mpu6050@{mpu6050}!get\+AcceleratorX@{get\+AcceleratorX}}
+\index{get\+AcceleratorX@{get\+AcceleratorX}!mpu6050@{mpu6050}}
+\subsubsection{\texorpdfstring{get\+Accelerator\+X()}{getAcceleratorX()}}
+{\footnotesize\ttfamily int16\+\_\+t mpu6050\+::get\+AcceleratorX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the accelerator X value. 
+
+Using the read\+From\+Register funciton, this function will first read data from the high register. It will shift these bits 8 to the left. Next, using read\+From\+Register again, the function reads the data from the low register. These two values will then be added up. \mbox{\Hypertarget{classmpu6050_ae4dce81dd2af2fc9288b2f3966f59333}\label{classmpu6050_ae4dce81dd2af2fc9288b2f3966f59333}} 
+\index{mpu6050@{mpu6050}!get\+AcceleratorY@{get\+AcceleratorY}}
+\index{get\+AcceleratorY@{get\+AcceleratorY}!mpu6050@{mpu6050}}
+\subsubsection{\texorpdfstring{get\+Accelerator\+Y()}{getAcceleratorY()}}
+{\footnotesize\ttfamily int16\+\_\+t mpu6050\+::get\+AcceleratorY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the accelerator X value. 
+
+Using the read\+From\+Register funciton, this function will first read data from the high register. It will shift these bits 8 to the left. Next, using read\+From\+Register again, the function reads the data from the low register. These two values will then be added up. \mbox{\Hypertarget{classmpu6050_af1dcb00f30964e8ea1f20b1f4105b46a}\label{classmpu6050_af1dcb00f30964e8ea1f20b1f4105b46a}} 
+\index{mpu6050@{mpu6050}!get\+GyroscopeZ@{get\+GyroscopeZ}}
+\index{get\+GyroscopeZ@{get\+GyroscopeZ}!mpu6050@{mpu6050}}
+\subsubsection{\texorpdfstring{get\+Gyroscope\+Z()}{getGyroscopeZ()}}
+{\footnotesize\ttfamily int16\+\_\+t mpu6050\+::get\+GyroscopeZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the gyroscope Z value. 
+
+Using the read\+From\+Register funciton, this function will first read data from the high register. It will shift these bits 8 to the left. Next, using read\+From\+Register again, the function reads the data from the low register. These two values will then be added up. \mbox{\Hypertarget{classmpu6050_abf7874fc328913b17c22c86f3a01ee6e}\label{classmpu6050_abf7874fc328913b17c22c86f3a01ee6e}} 
+\index{mpu6050@{mpu6050}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!mpu6050@{mpu6050}}
+\subsubsection{\texorpdfstring{wake\+Up()}{wakeUp()}}
+{\footnotesize\ttfamily void mpu6050\+::wake\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wake up the M\+P\+U6050 gyroscope. 
+
+Wakes up the M\+P\+U6050 gyroscope by setting the power management address bits to 0. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mpu6050_8hpp}{mpu6050.\+hpp}\item 
+mpu6050.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{mpu6050_8hpp}{}\section{mpu6050.\+hpp File Reference}
+\label{mpu6050_8hpp}\index{mpu6050.\+hpp@{mpu6050.\+hpp}}
+{\ttfamily \#include \char`\"{}hwlib.\+hpp\char`\"{}}\newline
+Include dependency graph for mpu6050.\+hpp\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmpu6050}{mpu6050}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_a94b93aa4aabbe7caec7884ddb46b531b}\label{mpu6050_8hpp_a94b93aa4aabbe7caec7884ddb46b531b}} 
+\#define {\bfseries A\+C\+C\+E\+L\+\_\+\+X\+O\+U\+T\+\_\+H}~0x3B
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_a47679c25e1689ee0401959e33e05a761}\label{mpu6050_8hpp_a47679c25e1689ee0401959e33e05a761}} 
+\#define {\bfseries A\+C\+C\+E\+L\+\_\+\+X\+O\+U\+T\+\_\+L}~0x3C
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_a26d680f52fbdaa0623d16292e9c40d4c}\label{mpu6050_8hpp_a26d680f52fbdaa0623d16292e9c40d4c}} 
+\#define {\bfseries A\+C\+C\+E\+L\+\_\+\+Y\+O\+U\+T\+\_\+H}~0x3D
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_ad7a92304bd1dd3755068380b51319a93}\label{mpu6050_8hpp_ad7a92304bd1dd3755068380b51319a93}} 
+\#define {\bfseries A\+C\+C\+E\+L\+\_\+\+Y\+O\+U\+T\+\_\+L}~0x3E
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_ac0fcd61ece1f100c02494fc94f0b0dad}\label{mpu6050_8hpp_ac0fcd61ece1f100c02494fc94f0b0dad}} 
+\#define {\bfseries G\+Y\+R\+O\+\_\+\+Z\+O\+U\+T\+\_\+H}~0x47
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_a5466aa6a32d0b17e834ef9792e7f415d}\label{mpu6050_8hpp_a5466aa6a32d0b17e834ef9792e7f415d}} 
+\#define {\bfseries G\+Y\+R\+O\+\_\+\+Z\+O\+U\+T\+\_\+L}~0x48
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_a8ed1f343e82440b4ef900e5fe42d74f0}\label{mpu6050_8hpp_a8ed1f343e82440b4ef900e5fe42d74f0}} 
+\#define {\bfseries G\+Y\+R\+O\+\_\+\+A\+D\+D\+R\+E\+SS}~0x68
+\item 
+\mbox{\Hypertarget{mpu6050_8hpp_a96169eb207e721c1546cea9ffd8a35e4}\label{mpu6050_8hpp_a96169eb207e721c1546cea9ffd8a35e4}} 
+\#define {\bfseries P\+W\+R\+\_\+\+M\+G\+M\+T\+\_\+1}~0x6B
+\end{DoxyCompactItemize}
