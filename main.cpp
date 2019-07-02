@@ -21,6 +21,22 @@ int main( void ){
 	mpu.wakeUp();
 
 	for(;;){
+		// Test if the values are properly communicated. If not, the pin will be powered and you'll have to press the reset button on the Arduino Due.
+		if (((mpu.getGyroscopeZ() == 0 ) && (mpu.getAcceleratorX() == 0 ) && (mpu.getAcceleratorY() == 0))
+			|| 
+			((mpu.getGyroscopeZ() == -1) && (mpu.getAcceleratorX() == -1) && (mpu.getAcceleratorY() == -1)))
+		{
+			for(unsigned int i = 0; i < 5; i++){
+				buzzer.write( 1 );
+				buzzer.flush();
+				// Delay to decide how long the buzzer is on.
+				hwlib::wait_ms( 100 );
+				buzzer.write( 0 );
+				buzzer.flush();
+				hwlib::wait_ms( 100 );
+			}
+		}
+
 		// If movement is detected, and if the gyroscope is tilted past a certain point, power the GPIO pin.
 		if (mpu.getGyroscopeZ() < -30000){
 			if ((mpu.getAcceleratorX() > 17000) && (mpu.getAcceleratorY() > -4000)){
